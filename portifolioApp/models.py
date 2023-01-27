@@ -28,3 +28,11 @@ class Contato(models.Model):
     email = models.EmailField(max_length=254)
     assunto = models.CharField(max_length=100)
     texto = models.TextField()
+    def __str__(self) -> str:
+        return 'Mensagem de '+self.nome
+    class Meta: #Definindo o nome da classe no plural
+        verbose_name_plural = "Contatos"
+
+
+    
+

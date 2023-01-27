@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
     path('projetos',projetos),
-    path('contato',contato),
+    path('contato',contato,name='url_contato'),
 
 ]
