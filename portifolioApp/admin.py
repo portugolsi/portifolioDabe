@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Categoria, Projeto, Contato
 
-# Register your models here.
+admin.site.register(Contato)
+admin.site.register(Categoria)
+admin.site.register(Projeto)
